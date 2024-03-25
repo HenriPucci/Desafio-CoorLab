@@ -1,11 +1,16 @@
 <template>
 
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+
   <section class="menu_content">
     <div class="menu_content_img">
       <img alt="Vue logo" src="../assets/cb_viagens_logo.png">
     </div>
 
     <div class="menu_content_text">
+      <i class="fas fa-calculator"></i>
       <h3>Calculadora de Viagem</h3>
     </div>
     
@@ -26,7 +31,6 @@ export default {
 .menu_content {
   display: flex;
   flex-direction: column;
-  padding-left: 5%;
   width: 90%;
 }
 
@@ -35,6 +39,7 @@ export default {
   justify-content: flex-start;
   margin-top: 10%;
   margin-bottom: 20%;
+  padding-left: 10%;
 }
 .menu_content_img img {
   width: 70%; 
@@ -42,12 +47,20 @@ export default {
 }
 .menu_content_text {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 h3 {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 100%;
   display: flex;
+  flex-shrink: 10;
+}
+i {
+  color: #fff;
+  font-size: 100%;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 5%;
   flex-shrink: 10;
 }
 
